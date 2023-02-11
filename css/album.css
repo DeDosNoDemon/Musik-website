@@ -1,0 +1,120 @@
+main{
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+/*ALBOM NAME/IMG/DES/LIKES/DATE*/
+.alb-cont{    
+    --bs-gutter-x: 0;
+    height: 350px;
+    max-width: 760px;
+    margin: 0;
+    padding: 15px 10px;
+    border-radius: 0.375rem;
+    border: 2px solid #cfcfcf;
+}
+.alb-img{
+    width: 100%;
+    max-width:320px;
+    border-radius: 0.375rem;
+}
+.alb-inf{
+    display: flex;
+    flex-flow: column;
+}
+.alb-name{
+    flex: 0 1 35px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+.alb-des{
+    flex: 0 1 auto;
+    font-size: 20px;
+}
+.alb-under{
+    flex: 1 1 auto;
+    align-items: end;
+    height: auto;
+}
+.alb-date{
+    font-size: 18px;
+    text-align: end;
+    margin: 0;
+}
+/*ALBOM SONGS*/
+.songs{
+    max-width: 350px;
+    background: #FF8C0020;
+    border: 2px solid #cfcfcf;
+    border-radius: 10px;
+}
+.songs-up{
+    font-weight: bold;
+    text-align: start;
+    margin:10px 0 0 20px;
+}
+.songs-group{
+    padding: 0 10px;
+    gap:5px
+}
+.song{
+    border-radius: 10px;
+    border: 1px solid #cfcfcf;
+    outline: 0 solid #FF8C00;
+    transition: 0.1s;
+}
+.song:hover{
+    outline: 2px solid #FF8C00;
+    outline-offset: 2px;
+}
+/*VOLUME*/
+.volume{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: white;
+    border: 2px solid #d0d0d0;
+    border-radius: 10px;
+    gap: 5px;
+}
+.volumeNum{
+    font-size: 20px;
+    font-weight: bold;
+}
+.volumeImg{
+    width: 24px;
+}
+.volumeInp{
+    position: relative;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width:60%;
+    height:6px;
+    background-color: #d0d0d0;
+    border-radius: 8px;
+    outline: none;
+}
+.volumeInp::-webkit-slider-runnable-track{
+    -webkit-appearance: none;
+    height:8px;
+}
+.volumeInp::-moz-track{
+    -moz-appearance: none;
+    height:8px;
+}
+.volumeInp::-ms-track{
+    appearance: none;
+    height:8px
+}
+.volumeInp::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    width: 15px;
+    height: 15px;
+    background-color: #FF8C00;
+    border-radius: 50%;
+    pointer-events: auto;
+    cursor:pointer;
+    margin-top: -3px;
+    border:none;
+}
